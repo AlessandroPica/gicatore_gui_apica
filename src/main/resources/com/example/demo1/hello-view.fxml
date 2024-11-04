@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="700.0" style="-fx-background-color: linear-gradient(to bottom right, #1B1B1B, #0058A8);" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <!-- Titolo Centrale con colori Atalanta -->
+      <Label layoutX="140.0" layoutY="20.0" prefHeight="60.0" prefWidth="420.0" style="-fx-font-size: 36px; -fx-font-weight: bold; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.7), 15, 0.5, 0, 3);" text="Atalanta BC" textFill="#FFFFFF">
+         <font>
+            <Font name="Helvetica" size="36.0" />
+         </font>
+      </Label>
+
+      <!-- Pulsanti con gradienti nero e blu -->
+      <Button layoutX="14.0" layoutY="100.0" mnemonicParsing="false" onAction="#add" style="-fx-background-color: linear-gradient(to right, #1B1B1B, #0058A8); -fx-text-fill: #FFFFFF; -fx-font-size: 14px; -fx-font-weight: bold; -fx-background-radius: 10; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 10, 0, 2, 2);" text="Aggiungi" />
+      <Button layoutX="154.0" layoutY="100.0" mnemonicParsing="false" onAction="#remove" style="-fx-background-color: linear-gradient(to right, #0058A8, #1B1B1B); -fx-text-fill: #FFFFFF; -fx-font-size: 14px; -fx-font-weight: bold; -fx-background-radius: 10; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 10, 0, 2, 2);" text="Rimuovi" />
+      <Button layoutX="294.0" layoutY="100.0" mnemonicParsing="false" onAction="#visualizza" style="-fx-background-color: linear-gradient(to right, #1B1B1B, #0058A8); -fx-text-fill: #FFFFFF; -fx-font-size: 14px; -fx-font-weight: bold; -fx-background-radius: 10; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 10, 0, 2, 2);" text="Visualizza" />
+      <Button layoutX="434.0" layoutY="100.0" mnemonicParsing="false" onAction="#random" style="-fx-background-color: linear-gradient(to right, #0058A8, #1B1B1B); -fx-text-fill: #FFFFFF; -fx-font-size: 14px; -fx-font-weight: bold; -fx-background-radius: 10; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 10, 0, 2, 2);" text="Random" />
+      <Button layoutX="574.0" layoutY="100.0" mnemonicParsing="false" onAction="#esci" style="-fx-background-color: linear-gradient(to right, #1B1B1B, #0058A8); -fx-text-fill: #FFFFFF; -fx-font-size: 14px; -fx-font-weight: bold; -fx-background-radius: 10; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 10, 0, 2, 2);" text="Esci" />
+
+      <!-- Campi di testo con sfondo scuro e testo bianco -->
+      <TextField layoutX="40.0" layoutY="180.0" promptText="Nome Giocatore" style="-fx-background-color: #1B1B1B; -fx-text-fill: #0058A8; -fx-prompt-text-fill: #777; -fx-font-size: 16px; -fx-background-radius: 8; -fx-padding: 5px;" />
+      <TextField layoutX="40.0" layoutY="230.0" promptText="Posizione" style="-fx-background-color: #1B1B1B; -fx-text-fill: #0058A8; -fx-prompt-text-fill: #777; -fx-font-size: 16px; -fx-background-radius: 8; -fx-padding: 5px;" />
+      <TextField layoutX="250.0" layoutY="180.0" promptText="Numero Maglia" style="-fx-background-color: #1B1B1B; -fx-text-fill: #0058A8; -fx-prompt-text-fill: #777; -fx-font-size: 16px; -fx-background-radius: 8; -fx-padding: 5px;" />
+      <TextField layoutX="250.0" layoutY="230.0" promptText="Squadra" style="-fx-background-color: #1B1B1B; -fx-text-fill: #0058A8; -fx-prompt-text-fill: #777; -fx-font-size: 16px; -fx-background-radius: 8; -fx-padding: 5px;" />
+      <TextField layoutX="460.0" layoutY="230.0" promptText="Età" style="-fx-background-color: #1B1B1B; -fx-text-fill: #0058A8; -fx-prompt-text-fill: #777; -fx-font-size: 16px; -fx-background-radius: 8; -fx-padding: 5px;" />
+
+      <!-- TextArea con sfondo scuro e bordi blu -->
+      <TextArea fx:id="fullbox" layoutX="30.0" layoutY="290.0" prefHeight="120.0" prefWidth="640.0" style="-fx-background-color: #1B1B1B; -fx-text-fill: #FFFFFF; -fx-font-size: 14px; -fx-font-family: 'Courier New'; -fx-background-radius: 10; -fx-border-color: #0058A8; -fx-border-radius: 10; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 10, 0, 2, 2);" />
+   </children>
+</AnchorPane>
