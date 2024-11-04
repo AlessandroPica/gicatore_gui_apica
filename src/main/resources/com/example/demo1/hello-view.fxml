@@ -7,7 +7,7 @@
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="700.0" style="-fx-background-color: linear-gradient(to bottom right, #1B1B1B, #0058A8);" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <!-- Titolo Centrale con colori Atalanta -->
-      <Label layoutX="140.0" layoutY="20.0" prefHeight="60.0" prefWidth="420.0" style="-fx-font-size: 36px; -fx-font-weight: bold; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.7), 15, 0.5, 0, 3);" text="Atalanta BC" textFill="#FFFFFF">
+      <Label layoutX="140.0" layoutY="20.0" prefHeight="60.0" prefWidth="420.0" style="-fx-font-size: 36px; -fx-font-weight: bold; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.7), 15, 0.5, 0, 3);" text="Squadra Calcio" textFill="#FFFFFF">
          <font>
             <Font name="Helvetica" size="36.0" />
          </font>
