@@ -4,7 +4,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane fx:controller="com.example.demo1.MioController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="700.0" style="-fx-background-color: linear-gradient(to bottom right, #1B1B1B, #0058A8);" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="700.0" style="-fx-background-color: linear-gradient(to bottom right, #1B1B1B, #0058A8);" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo1.MioController">
    <children>
       <!-- Titolo Centrale con colori Atalanta -->
       <Label layoutX="140.0" layoutY="20.0" prefHeight="60.0" prefWidth="420.0" style="-fx-font-size: 36px; -fx-font-weight: bold; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.7), 15, 0.5, 0, 3);" text="Squadra Calcio" textFill="#FFFFFF">
@@ -14,11 +14,11 @@
       </Label>
 
       <!-- Pulsanti con gradienti nero e blu -->
-      <Button layoutX="14.0" layoutY="100.0" mnemonicParsing="false" onAction="#add" style="-fx-background-color: linear-gradient(to right, #1B1B1B, #0058A8); -fx-text-fill: #FFFFFF; -fx-font-size: 14px; -fx-font-weight: bold; -fx-background-radius: 10; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 10, 0, 2, 2);" text="Aggiungi" />
-      <Button layoutX="154.0" layoutY="100.0" mnemonicParsing="false" onAction="#remove" style="-fx-background-color: linear-gradient(to right, #0058A8, #1B1B1B); -fx-text-fill: #FFFFFF; -fx-font-size: 14px; -fx-font-weight: bold; -fx-background-radius: 10; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 10, 0, 2, 2);" text="Rimuovi" />
-      <Button layoutX="294.0" layoutY="100.0" mnemonicParsing="false" onAction="#visualizza" style="-fx-background-color: linear-gradient(to right, #1B1B1B, #0058A8); -fx-text-fill: #FFFFFF; -fx-font-size: 14px; -fx-font-weight: bold; -fx-background-radius: 10; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 10, 0, 2, 2);" text="Visualizza" />
-      <Button layoutX="434.0" layoutY="100.0" mnemonicParsing="false" onAction="#random" style="-fx-background-color: linear-gradient(to right, #0058A8, #1B1B1B); -fx-text-fill: #FFFFFF; -fx-font-size: 14px; -fx-font-weight: bold; -fx-background-radius: 10; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 10, 0, 2, 2);" text="Random" />
-      <Button layoutX="574.0" layoutY="100.0" mnemonicParsing="false" onAction="#esci" style="-fx-background-color: linear-gradient(to right, #1B1B1B, #0058A8); -fx-text-fill: #FFFFFF; -fx-font-size: 14px; -fx-font-weight: bold; -fx-background-radius: 10; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 10, 0, 2, 2);" text="Esci" />
+      <Button fx:id="add" layoutX="14.0" layoutY="100.0" mnemonicParsing="false" onAction="#add" style="-fx-background-color: linear-gradient(to right, #1B1B1B, #0058A8); -fx-text-fill: #FFFFFF; -fx-font-size: 14px; -fx-font-weight: bold; -fx-background-radius: 10; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 10, 0, 2, 2);" text="Aggiungi" />
+      <Button fx:id="remove" layoutX="154.0" layoutY="100.0" mnemonicParsing="false" onAction="#remove" style="-fx-background-color: linear-gradient(to right, #0058A8, #1B1B1B); -fx-text-fill: #FFFFFF; -fx-font-size: 14px; -fx-font-weight: bold; -fx-background-radius: 10; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 10, 0, 2, 2);" text="Rimuovi" />
+      <Button fx:id="visualizza" layoutX="294.0" layoutY="100.0" mnemonicParsing="false" onAction="#visualizza" style="-fx-background-color: linear-gradient(to right, #1B1B1B, #0058A8); -fx-text-fill: #FFFFFF; -fx-font-size: 14px; -fx-font-weight: bold; -fx-background-radius: 10; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 10, 0, 2, 2);" text="Visualizza" />
+      <Button fx:id="random" layoutX="434.0" layoutY="100.0" mnemonicParsing="false" onAction="#random" style="-fx-background-color: linear-gradient(to right, #0058A8, #1B1B1B); -fx-text-fill: #FFFFFF; -fx-font-size: 14px; -fx-font-weight: bold; -fx-background-radius: 10; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 10, 0, 2, 2);" text="Random" />
+      <Button fx:id="esci" layoutX="574.0" layoutY="100.0" mnemonicParsing="false" onAction="#esci" style="-fx-background-color: linear-gradient(to right, #1B1B1B, #0058A8); -fx-text-fill: #FFFFFF; -fx-font-size: 14px; -fx-font-weight: bold; -fx-background-radius: 10; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 10, 0, 2, 2);" text="Esci" />
 
       <!-- Campi di testo con sfondo scuro e testo bianco -->
       <TextField layoutX="40.0" layoutY="180.0" promptText="Nome Giocatore" style="-fx-background-color: #1B1B1B; -fx-text-fill: #0058A8; -fx-prompt-text-fill: #777; -fx-font-size: 16px; -fx-background-radius: 8; -fx-padding: 5px;" />
